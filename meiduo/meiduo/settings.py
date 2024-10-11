@@ -22,9 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q9#fo9kt74^mxmz^0rp2!x=qec71az!5=ros%+ko&eqk(*vvyd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 开发时设置为True，程序完成时设置为False
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许访问项目的形式 默认是127.0.0.1
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 # 注册/安装子应用
